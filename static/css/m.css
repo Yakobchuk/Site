@@ -1,0 +1,152 @@
+*{
+padding: 0;
+margin: 0;
+}
+html, body {height: 100%;}
+body {  
+background: url(1.jpg);
+background-size: 100% 100%;
+}  
+
+#header{
+width: 100%;
+height: 80px;
+background-color: black;
+background-image: url(log.png) no-repeat;
+background-size: 100% 100%;
+}
+.top-menu {
+position: relative;
+padding: 30px  ;
+margin: 0 ;
+float: left;
+left: 30px;
+display: table;
+}
+.top-menu li {
+float:left;
+padding-left: 30px ;
+display: table-cell;
+text-align: center;
+}
+.top-menu ul {
+position: absolute;
+z-index: 5;
+display: none;
+}
+.top-menu li a {
+display: block;
+padding: 0 20px;
+	color: #f7f7f7;
+	text-decoration: none;
+	font-size: 12pt;	
+	font-family: Gill Sans, sans-serif
+}
+.top-menu ul li{
+display: block;
+text-align: left;
+position: relative;
+padding-bottom: 30px;
+}
+
+.top-menu li:hover ul{
+	display: block;	
+	/*margin-left: -30px;
+	bottom: -60px;*/
+}
+
+
+#main{
+position: relative;
+min-height: 100%;
+}
+* html #content {
+height: 100%;
+}
+#video{
+position: absolute;
+left: 700px;
+top: 70px;
+}
+#rectangle{
+width: 100%;
+height: 100px;
+color: black;
+}
+#social {
+float: left;
+padding-top: 20px;
+}
+
+.twitter {
+width: 40px;
+height: 40px;
+display: inline-block;
+background: url(tw.png)  no-repeat;
+background-size: 100% 100%;
+-webkit-filter: brightness(50%); 
+}
+a.twitter:hover{
+-webkit-filter: brightness(100%); 
+}
+.vk {
+/**/
+margin-top:10px;
+width: 40px;
+height: 37px;
+display: block;
+background: url(vk.png) no-repeat;
+background-size: 95% 100%;
+-webkit-filter: brightness(50%); 
+}
+a.vk:hover{
+-webkit-filter: brightness(100%); 
+}
+.fb {
+margin-top:10px;
+width: 40px;
+height: 40px;
+display: block;
+background: url(fb.png) no-repeat;
+background-size: 100% 100%;
+-webkit-filter: brightness(50%); 
+}
+a.fb:hover{
+-webkit-filter: brightness(100%); 
+}
+.youtube {
+margin-top:10px;
+width: 42px;
+height: 40px;
+display: block;
+background: url(youtube.png) no-repeat;
+background-size: 97% 100%;
+-webkit-filter: brightness(50%); 
+}
+a.youtube:hover{
+-webkit-filter: brightness(100%); 
+}
+#photo {
+position: absolute;
+background-color: black;
+height: 180px;
+
+}
+
+#footer{
+position: relative;
+background-color: black;
+height: 70px;
+margin-top: -70px;
+}
+.footer-menu li {
+	color: #f7f7f7;
+	position: relative;
+	left: 10%;
+	display: inline-block;
+	padding: 25px 30px;
+	font-size: 10pt;
+}
+
+
+

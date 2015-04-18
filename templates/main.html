@@ -1,0 +1,51 @@
+{% load staticfiles %}
+
+<html>
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="{% static "static/css/my.css" %}">
+     <script type="text/javascript" src="/static/js/jquery.js"></script>
+</head>
+
+<body>
+<div id="main">
+    <div id="header">
+   <a href="/"> <img src="/media/log.png" style="float: left; margin-left: 200px "/></a>
+        <ul class="hr">
+        <li><a href="/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Home</a></li>
+        <li><a href="/blog/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Blog</a></li>
+        <li><a href="/contact/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Contact</a></li>
+        <li><a href="/about/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">About</a></li>
+        <li><a href="/photo/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Photo</a></li>
+        <li><a href="/tovar/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Shop</a></li>
+            <li><a href="/photo/" style="color: #f7f7f7; text-decoration:none; font-size: 12pt">Reviews</a></li>
+        </ul>
+
+    </div>
+
+    <div id="menu">
+        <a href="http://twitter.com/" class="twitter"></a>
+        <a href="http://vk.com/" class="vk"></a>
+        <a href="http://facebook.com/" class="fb"></a>
+        <a href="http://youtube.com/" class="youtube"></a>
+    </div>
+
+{% block my %}{% endblock %}
+
+        <div id="content" style="color:#dedede;font-family:Arial, sans-serif; ">
+
+            {% block article %}{% endblock  %}
+            {% block login %}{% endblock %}
+            {% block tovar %}{% endblock %}
+            {% block photo %}{% endblock %}
+            {% block contact %}{% endblock %}
+            {% block about %}{% endblock %}
+        </div>
+
+    <div style="clear:both"></div>
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>
